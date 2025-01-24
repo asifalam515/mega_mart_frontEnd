@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/footer/Footer";
 import Header from "@/components/shared/header/Header";
 
 export default function RootLayout({
@@ -9,6 +10,7 @@ export default function RootLayout({
     <div className="flex h-screen flex-col">
       <Header></Header>
       <main className="flex-1 wrapper">{children}</main>
+      <Footer></Footer>
     </div>
   );
 }
