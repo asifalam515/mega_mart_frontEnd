@@ -1,11 +1,10 @@
-import React from "react";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "DashBoard",
+};
 const DashBoard = () => {
-  return (
-    <div>
-      <h1>DashBoard</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default DashBoard;
