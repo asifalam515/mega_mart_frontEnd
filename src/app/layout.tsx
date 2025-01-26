@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: `%s|Mega Store`,
+  title: `Mega Store`,
   description: APP_DESCRIPTION,
   metadataBase: new URL(SERVER_URL),
 };
