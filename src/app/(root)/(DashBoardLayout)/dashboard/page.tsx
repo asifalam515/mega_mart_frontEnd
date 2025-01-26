@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DashBoard",
+  title: "User DashBoard",
 };
 const DashBoard = () => {
-  return <div></div>;
+  return <div>User DashBoard</div>;
 };
 
 export default DashBoard;

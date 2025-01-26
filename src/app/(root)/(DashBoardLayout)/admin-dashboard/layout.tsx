@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "User DashBoard|MegaMart",
+  title: "Admin DashBoard|MegaMart",
 };
 
 export default function DashBoardLayout({
@@ -11,7 +11,7 @@ export default function DashBoardLayout({
 }>) {
   return (
     <div>
-      User sideBar
+      Admin DashBoard sideBar
       {children}
     </div>
   );
