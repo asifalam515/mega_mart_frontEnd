@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { EllipsisVertical, ShoppingCart, User, UserIcon } from "lucide-react";
+import {
+  EllipsisVertical,
+  LayoutDashboard,
+  ShoppingCart,
+  User,
+  UserIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import ToggleMode from "./ToggleMode";
@@ -11,6 +17,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
 const Header = () => {
   return (
     <div>
@@ -47,6 +54,12 @@ const Header = () => {
                   Sign In
                 </Link>
               </Button>
+              <Button asChild variant="ghost">
+                <Link href="/dashboard">
+                  <LayoutDashboard></LayoutDashboard>
+                  DashBoard
+                </Link>
+              </Button>
             </nav>
             {/* nav part 2 */}
             <nav className="lg:hidden md:hidden">
@@ -67,6 +80,12 @@ const Header = () => {
                       <Link href="/sign-in">
                         <User></User>
                         Sign In
+                      </Link>
+                    </Button>
+                    <Button asChild>
+                      <Link href="/dashboard">
+                        <LayoutDashboard></LayoutDashboard>
+                        DashBoard
                       </Link>
                     </Button>
                   </SheetDescription>
