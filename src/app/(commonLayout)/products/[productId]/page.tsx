@@ -5,6 +5,7 @@ import {
   ShoppingBasket,
   ThumbsUp,
 } from "lucide-react";
+
 const ProductDetails = async ({
   params,
   searchParams,
@@ -15,12 +16,12 @@ const ProductDetails = async ({
   const id = (await params).productId;
   const data = await fetch(`http://localhost:5000/products/${id}`);
   const product = await data.json();
-  console.log(product);
+
   const { name, description, price, stock, category, images } = product;
 
   return (
-    <div className="mx-auto">
-      <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <div className="flex flex-col max-w-lg w-full p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-50 dark:text-gray-800">
         <div>
           <Image isZoomed alt="HeroUI Fruit Image with Zoom" src={images[0]} />
           <h2 className="mb-1 text-xl font-semibold">{name}</h2>
